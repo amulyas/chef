@@ -1,0 +1,16 @@
+{
+  "chef": {
+    "chef_server_url": "https://api.opscode.com/organizations/aaws",
+    "validation_client_name": "aaws-validator",
+    "validation_key_path": ".chef/aaws-validator.pem",
+    "client_key": ".chef/amulyasharma.pem",
+    "node_name": "amulyasharma"
+  },
+  "vagrant": {
+    "vm": {
+      "box": "opscode-ubuntu-12.04-i386",
+      "box_url": "https://opscode-vm.s3.amazonaws.com/vagrant/opscode_ubuntu-12.04-i386_provisionerless.box",
+      "provision": "chef_client"
+    }
+  }
+}
